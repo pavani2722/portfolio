@@ -81,5 +81,20 @@ img{max-width:100%;height:auto;display:block}
 .where{margin-top:10px;font-size:15px}
 footer{background:#080a1e;color:#8e99b0;padding:18px 0;text-align:center;font-size:15px}
 
-@media(max-width:820px){.grid2,.grid2.start,#about .grid2{grid-template-columns:1fr;gap:36px}.hero{padding:48px 0 0}.block{padding:56px 0}.art{max-width:420px;margin:0 auto}.stats{grid-template-columns:repeat(2,1fr);margin-top:48px}}
+.grid2>*{min-width:0}
+@media(max-width:820px){
+  .grid2,.grid2.start,#about .grid2{grid-template-columns:1fr;gap:36px}
+  .hero{padding:40px 0 0}
+  .hero .grid2>div:first-child{text-align:center}
+  .hero .lead{margin-inline:auto}
+  .hero .btns,.hero .social{justify-content:center}
+  .portrait{order:-1;max-width:280px;margin-right:16px}
+  .block{padding:56px 0}
+  .art{width:100%;max-width:420px;margin:0 auto}
+  .stats{grid-template-columns:repeat(2,1fr);margin-top:44px}
+  .bar{padding-top:8px}
+  .top nav{width:100%;flex-wrap:nowrap;overflow-x:auto;gap:16px;padding:4px 0 10px;white-space:nowrap}
+  .timeline{margin-left:6px}
+  .where{font-size:14px}
+}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
